@@ -1,6 +1,6 @@
 """
-hyperspectral_clustering.py
-Clustering using hyperspectral remote sensing data.
+hyperspectral_classification.py
+Classification using hyperspectral remote sensing data.
 Author: Naman Jain
         naman.jain@btech2015.iitgn.ac.in
         www.namanji.wixsite.com/naman/
