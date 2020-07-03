@@ -10,6 +10,12 @@ If the input is a single GeoTIFF raster containing all the bands, use `img_to_ar
 - Classified output raster is georeferenced wrt to the input GeoTIFF.
 - Produces corresponding shapefiles as well. Shapefile is generated separately for each class. The shapefiles also contain 'Area' field.
 
+## Data and Results
+The hyperspectral data that I used is from Nasa's Earth Observing-1. 
+There are three AOIs (Area Of Interests) - agricultural, cloudy, and LULC (Land Use Land Cover).
+For each AOI, there are 242 spectral bands each belonging to different wavelength range.
+The input data can be found [here](https://drive.google.com/drive/folders/1RkcIBpgFQfwIAZuBSgrIdVJhaEvcUrRE?usp=sharing). The results with performing feature scaling can be found [here](https://drive.google.com/drive/folders/119ILfRvftV7TQeCoqbTo0n6loZFbv5gx?usp=sharing). The results without performing feature scaling can be found [here](https://drive.google.com/drive/folders/19MhLs9Ep3lRIw5GP6lN2f7XzjsrYTAJS?usp=sharing).
+
 ### Sample Images
 Classified crops output <br />
 <p align="center">
