@@ -232,7 +232,7 @@ def split_shp(in_shp_path, new_shp_path, DN_value = 2):
     Generates a new shapefile ('new_shp_path') from the 'in_shp_path' consiting of geometries 
     where the DN value is equal to 'DN_value'.
     """ 
-    cmd = 'ogr2ogr -f "ESRI Shapefile" -where "DN={}" {} {}'.format(DN_value, new_shp_path, shp_path)
+    cmd = 'ogr2ogr -f "ESRI Shapefile" -where "DN={}" {} {}'.format(DN_value, new_shp_path, in_shp_path)
     os.system(cmd)
 
 def read_colab_error_logs():
@@ -264,7 +264,7 @@ if __name__ == "__main__":
     cluster_array = cluster(bands_np_array, n_clusters = 5)
     # visualize_cluster(cluster_array)
     print('saving cluster')
-    save_array_as_geotif(cluster_array, source_tif_path, out_path)        
+    save_array_as_geotif(cluster_array, source_tif_path, cluster_raster_path)        
 
     # converting clustered raster to shapefile   
     cluster_array = return_tif_as_array(cluster_raster_path)
